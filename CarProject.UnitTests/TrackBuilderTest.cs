@@ -10,8 +10,9 @@ public class TrackBuilderTest
   public void ItShouldBuildAConnectedTrack_GivenSectionInformation()
   {
     (int, int)[ ] sectionInfos = [ (10, 10) , (20, 20) , (30, 30) ];
+        int test = 0;
 
-    TrackBuilder builder = new(sectionInfos);
+        TrackBuilder builder = new(sectionInfos);
 
     Section
       startSection = new(sectionInfos[ 0 ].Item1 , sectionInfos[ 0 ].Item2),
